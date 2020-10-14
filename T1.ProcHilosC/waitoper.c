@@ -4,6 +4,7 @@
 #include <sys/wait.h>
 #include <unistd.h>
 
+
 int main(void)
 {
    int i;
@@ -12,21 +13,21 @@ int main(void)
    int prod,mayor;
    int res;
 
-   printf("\nDame dos enteros: \n");
+   printf("\nDame dos enteros: \n"); /*  */
    scanf("%d%d", &a, &b);
    pidh1 = fork();
 
 // código del padre
-   if(pidh1)
+   if(pidh1) /* Si es padre crearemos otro hijo */
    {
-      pidh2 = fork();
-      if(pidh2)
+      pidh2 = fork(); /* Si es padre crearemos otro hijo */
+      if(pidh2) 
       {
         for(i = 0; i < 2; i++)
         {
-           pidx = wait(&res);
- 	   if (pidx == pidh1)
-             prod = res;
+           pidx = wait(&res); /*  Esperamos AL HIJO 2 */
+ 	   if (pidx == pidh1) 
+             prod = res;            /* Ejecución del hijo para el prod y mayor */
            else
              mayor = res;
         }
@@ -34,17 +35,17 @@ int main(void)
         printf("\n El mayor de %d y %d es %d \n", a,b,mayor);
       }
 
-      else
+      else			/*  Termina aqui el hijo 2*/
       {
          if(a > b)
            exit(a);
          else
            exit(b);
-      }
+      }				/* Y termina la ejecución del padre */
    }
 // hijo 1
    else
-      {
+      {				/* Si era hijo entonces, realizamos ep prod */
 	 prod = a * b;
 	 exit(prod);
       }
