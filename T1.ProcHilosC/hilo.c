@@ -6,7 +6,7 @@ void *codigo_del_hilo(void *id)
 {
  int i;          
  for(i = 0; i < 50; i++) /* Itera el hilo 50  veces */
-  printf("\n Soy el hilo: %d, iter = %d", *(int*)id, i); 
+  printf("\n Soy el hilo: %d, iter = %d", *(int*)id, i); /* Hilo imprime descripción de la iteración*/
  pthread_exit(id);
 }
 
