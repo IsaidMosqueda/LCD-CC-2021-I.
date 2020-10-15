@@ -17,5 +17,5 @@ int main(void)
   int *salida;
   pthread_create(&hilo, NULL, codigo_del_hilo, &id); /* Crea el hilo con la la iteración de codigo_del_hilo   */
   pthread_join(hilo, NULL); /* En espera a la funcion del hilo  */
-  printf("\n Hilo %d terminado \n", *salida); /* Termino dle hilo  */
+  printf("\n Hilo %d terminado \n", *salida); /* Termino del hilo*/
 }
