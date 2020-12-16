@@ -4,4 +4,4 @@ Juan Pablo Hernández Lozano Overleaf: https://www.overleaf.com/1767152681dfzkcd
 
 Veleros Vega Luis alfonso   Overleaf: https://es.overleaf.com/6442523518vddygvmfxmmz
 
-Ruiz Puga Indrid Pamela Overleaf: https://www.overleaf.com/read/kykpfwbjzcpm
+Ruiz Puga Ingrid Pamela Overleaf: https://www.overleaf.com/read/kykpfwbjzcpm
